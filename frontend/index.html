@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Nova AI</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Google Font -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+        rel="stylesheet"
+    >
+</head>
+
+<body>
+
+    <div class="app">
+
+        <!-- =========================================
+             LEFT SIDEBAR
+        ========================================== -->
+
+        <aside class="sidebar">
+
+            <!-- Robot Logo -->
+
+            <div class="robot-logo">
+                🤖
+            </div>
+
+
+            <!-- Navigation -->
+
+            <div class="nav-icons">
+
+                <button class="nav-btn active">
+                    🔍
+                </button>
+
+                <button class="nav-btn">
+                    ◷
+                </button>
+
+                <button class="nav-btn">
+                    ▦
+                </button>
+
+                <button class="nav-btn">
+                    ✨
+                </button>
+
+            </div>
+
+
+            <!-- Settings -->
+
+            <button class="settings-btn">
+                ⚙
+            </button>
+
+        </aside>
+
+
+        <!-- =========================================
+             MAIN AREA
+        ========================================== -->
+
+        <main class="main">
+
+            <div class="dashboard">
+
+
+                <!-- =================================
+                     TOP BAR
+                ================================== -->
+
+                <header class="topbar">
+
+                    <div class="brand">
+
+                        <span class="brand-robot">
+                            🤖
+                        </span>
+
+                        <span>
+                            Velora AI
+                        </span>
+
+                    </div>
+
+
+                    <button class="upgrade-btn">
+                        Upgrade
+                    </button>
+
+                </header>
+
+
+
+                <!-- =================================
+                     HERO SECTION
+                ================================== -->
+
+                <section class="hero">
+
+                    <!-- Glowing Orb -->
+
+                    <div class="orb">
+
+                        <div class="orb-core"></div>
+
+                        <div class="orb-ring ring-one"></div>
+
+                        <div class="orb-ring ring-two"></div>
+
+                        <div class="orb-ring ring-three"></div>
+
+                        <div class="orb-light light-one"></div>
+
+                        <div class="orb-light light-two"></div>
+
+                    </div>
+
+
+                    <!-- Greeting -->
+
+                    <h1>
+                        <span>Welcome Back </span>
+                        <strong>Harsh!</strong>
+                    </h1>
+
+
+                    <p>
+                        What design would you like feedback on?
+                    </p>
+
+                </section>
+
+
+
+                <!-- =================================
+                     CHAT AREA
+                ================================== -->
+
+                <section class="chat-section">
+
+                    <div class="chat-box">
+
+
+                        <!-- Input -->
+
+                        <textarea
+                            id="messageInput"
+                            placeholder="Learn more about our features."
+                            rows="3"
+                        ></textarea>
+
+
+                        <!-- Bottom Controls -->
+
+                        <div class="chat-controls">
+
+
+                            <div class="left-controls">
+
+                                <button
+                                    class="control-btn"
+                                    title="Attach file"
+                                >
+                                    📎
+                                </button>
+
+
+                                <button
+                                    class="control-btn"
+                                    title="Tools"
+                                >
+                                    ✣
+                                </button>
+
+                            </div>
+
+
+                            <div class="right-controls">
+
+                                <button
+                                    class="control-btn"
+                                    title="Voice"
+                                >
+                                    ♫
+                                </button>
+
+
+                                <button
+                                    class="send-btn"
+                                    id="sendBtn"
+                                    title="Send"
+                                >
+                                    ➤
+                                </button>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+
+                    <!-- =================================
+                         SUGGESTIONS
+                    ================================== -->
+
+                    <div class="suggestions">
+
+                        <button
+                            class="suggestion"
+                            data-prompt="Help me with coding"
+                        >
+                            <span>▣</span>
+                            Coding
+                        </button>
+
+
+                        <button
+                            class="suggestion"
+                            data-prompt="Give me a cooking recipe"
+                        >
+                            <span>▰</span>
+                            Cooking
+                        </button>
+
+
+                        <button
+                            class="suggestion"
+                            data-prompt="Give me some health information"
+                        >
+                            <span>♡</span>
+                            Health
+                        </button>
+
+
+                        <button
+                            class="suggestion"
+                            data-prompt="Help me plan a trip"
+                        >
+                            <span>♧</span>
+                            Trips
+                        </button>
+
+
+                        <button
+                            class="suggestion"
+                            data-prompt="Help me troubleshoot a problem"
+                        >
+                            <span>⌕</span>
+                            Troubleshoot
+                        </button>
+
+                    </div>
+
+                </section>
+
+
+
+                <!-- =================================
+                     CHAT MESSAGES
+                ================================== -->
+
+                <div
+                    id="messages"
+                    class="messages"
+                ></div>
+
+
+            </div>
+
+        </main>
+
+    </div>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
